@@ -324,7 +324,7 @@ details ul li a{
 /* anything */
 
 .cap{
-  background-color:#000000;
+  background-color: black;
   width: 100%;
   margin-top: 100vh;
 }
@@ -334,7 +334,7 @@ details ul li a{
   font-family: 'Courier prime', Courier, monospace;
 }
 
-footer {
+#foot {
   background: linear-gradient(135deg, #1d1d1d, #333);
   color: #fff;
   padding: 40px 0;
