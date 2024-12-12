@@ -161,6 +161,7 @@ details ul li a{
   align-items: center;
   height: 100vh;
   background-color: #f4f4f4;
+    user-select: none;
 }
 
 .slider {
@@ -169,6 +170,7 @@ details ul li a{
   max-width: 1500px; 
   height: 600px;
   overflow: hidden;
+    user-select: none;
 }
 
 .slides {
@@ -193,6 +195,7 @@ details ul li a{
   border-radius: 10px;
   position: relative;
   z-index: 3;
+    user-select: none;
 }
 
 .caption {
