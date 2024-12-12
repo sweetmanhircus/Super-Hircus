@@ -1,0 +1,151 @@
+
+
+.sy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1500px; 
+  height: 600px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Ensure container width scales properly */
+  position: relative;
+}
+
+.slide {
+  min-width: 100%; /* Ensure all slides occupy the same width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* Navigation Arrows */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Navigation Dots */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .caption {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .prev,
+  .next {
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    margin-top: -140px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin-top: -300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .caption {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .prev,
+  .next {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
