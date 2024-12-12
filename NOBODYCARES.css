@@ -192,7 +192,7 @@ details ul li a{
   display: block;
   border-radius: 10px;
   position: relative;
- 
+  z-index: 3;
 }
 
 .caption {
@@ -226,6 +226,7 @@ details ul li a{
   justify-content: center;
   align-items: center;
   transition: background 0.3s ease;
+ user-select: none;
 }
 
 .prev:hover,
