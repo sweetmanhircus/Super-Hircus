@@ -343,7 +343,7 @@ details ul li a{
 }
 
 @media(max-width:720px){
-  footer{
+  #foot{
     height: 400px;
   }
 }
@@ -427,18 +427,18 @@ details ul li a{
   }
 }
 
-.footer-bottom {
+#foot-bottom {
   margin-top: 30px;
   font-size: 14px;
   color: #bbb;
 }
 
-.footer-bottom a {
+#foot-bottom a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.footer-bottom a:hover {
+#foot-bottom a:hover {
   color: #4caf50;
 }
