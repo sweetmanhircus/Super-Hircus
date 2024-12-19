@@ -19,6 +19,7 @@ body{
 
 .mytab {
     background-color: #fafafa;
+    height: 90px;
     gap: 30px;
     align-items: center;
     display: flex;
@@ -36,12 +37,17 @@ body{
 }
 
 .logo {
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
-    border: solid black 1px;
+    border: solid black 2px;
     
     
 }
+.logo:hover {
+  background: linear-gradient(135deg, #ff0099, #ff0000, #00bbff, #7b00ff);
+  animation: glow 1.5s infinite alternate;
+}
+
 .logo a{
     text-decoration: none;
     color: #000000;
@@ -86,12 +92,14 @@ nav ul li a:hover{
         margin: auto;
         margin-top: 0;
     }
-}
+
+  }
 
 @media(min-width:720px){
     .bug{
         display: none
     }
+    
 }
 
 nav ul li a:hover {
@@ -114,10 +122,7 @@ details ul{
     
 
 }
-details ul:hover{
 
-   
-}
 
 
 
@@ -160,7 +165,7 @@ details ul li a{
   justify-content: center;
   align-items: center;
   height: 87vh;
-  border-radius: 20px;
+ 
   background-color: #ffffff;
 }
 
@@ -170,16 +175,17 @@ details ul li a{
   justify-content: center;
   align-items: center;
      height: 10vh;
-     margin-top: 280px;
+     margin-top: 300px;
      
   }
 }
+
 
 .slider {
   position: relative;
   width: 100%;
   max-width: 1500px; 
-  height: 590px;
+  height: 644px;
   overflow: hidden;
   border-radius: 20px;
   user-select: none;
@@ -201,6 +207,7 @@ details ul li a{
 }
 
 
+
 .slide img {
   width: 100%;
   display: block;
@@ -213,7 +220,7 @@ details ul li a{
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.6);
+  
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -291,13 +298,13 @@ details ul li a{
     font-size: 24px;
     width: 35px;
     height: 35px;
-    margin-top: -140px;
+    margin-top: -190px;
   }
 
   .dot {
     width: 10px;
     height: 10px;
-    margin-top: -300px;
+    margin-top: -390px;
   }
 }
 
@@ -324,7 +331,7 @@ details ul li a{
 /* anything */
 
 .cap{
-  background-color: black;
+  background-color:#000000;
   width: 100%;
   margin-top: 100vh;
 }
@@ -334,7 +341,7 @@ details ul li a{
   font-family: 'Courier prime', Courier, monospace;
 }
 
-#foot {
+footer {
   background: linear-gradient(135deg, #1d1d1d, #333);
   color: #fff;
   padding: 40px 0;
@@ -343,7 +350,7 @@ details ul li a{
 }
 
 @media(max-width:720px){
-  #foot{
+  footer{
     height: 400px;
   }
 }
@@ -407,12 +414,12 @@ details ul li a{
 
 .social-icons a:hover {
   color: #fff;
-  background: linear-gradient(135deg, #f44336, #ffeb3b, #4caf50, #2196f3);
+  background: linear-gradient(135deg, #ff0099, #ff0000, #00bbff, #7b00ff);
   animation: glow 1.5s infinite alternate;
 }
 
 .social-icons a:hover::before {
-  box-shadow: 0 0 20px #f44336, 0 0 20px #ffeb3b, 0 0 20px #4caf50, 0 0 20px #2196f3;
+  box-shadow: 0 0 20px #ea00ff, 0 0 20px #ff0000, 0 0 20px #00d0ff, 0 0 20px #bb00ff;
 }
 
 @keyframes glow {
@@ -427,18 +434,100 @@ details ul li a{
   }
 }
 
-#foot-bottom {
+.footer-bottom {
   margin-top: 30px;
   font-size: 14px;
   color: #bbb;
 }
 
-#foot-bottom a {
+.footer-bottom a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-#foot-bottom a:hover {
+.footer-bottom a:hover {
   color: #4caf50;
+}
+
+.bax{
+  background-color: #ff4444;
+  border:10px solid #a6d5ff;
+  width: 100%;
+  height: 100px;
+}
+
+.insta{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.back{
+  background-color: #fafafa;
+  border:20px solid #a6d5ff;
+}
+
+@media(max-width:720px){
+  .slider {
+    border-radius: 7px;
+  }
+  .slide img {
+    border-radius: 7px;
+  }
+  .back{
+    border: 1px solid white;
+  }
+}
+
+.social-cons {
+  margin: 15px 0;
+  display: flex;
+  gap: 40px;
+  margin-left: 300px;
+}
+
+.social-cons a {
+  color: #000000;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #fafafa;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.social-cons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.4s ease;
+}
+
+.social-cons a:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #ff0099, #ff0000, #00bbff, #7b00ff);
+  animation: glow 3.5s infinite alternate;
+}
+
+.social-cons a:hover::before {
+  box-shadow: 0 0 20px #ea00ff, 0 0 20px #ff0000, 0 0 20px #00d0ff, 0 0 20px #bb00ff;
+}
+
+@media(max-width:720px){
+
+  .social-cons{
+    display: none;
+  }
 }
