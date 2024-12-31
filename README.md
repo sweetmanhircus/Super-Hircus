@@ -2,6 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="SUPER-HIRCUS" content="Dive into neuroscience with Hircus! Explore life-changing content blending science, psychology, and practical strategies to build a healthier, productive life. Learn to rewire your brain and debunk myths with engaging, easy-to-understand videos.">
+
     <title>SUPER-HIRCUS</title>
 <style>
 .box:hover{
