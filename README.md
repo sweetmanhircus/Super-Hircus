@@ -24,15 +24,15 @@
 <body style="background-color: black;">
     <h1 style="text-align: center; color: #fafafa;">SUPER-HIRCUS</h1>
     <div class="box" style="background:linear-gradient(rgb(255, 200, 0),rgb(255, 149, 0)); width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; margin: auto;">
-    <a href="https://sweetmanhircus.github.io/Hircus//NOBODYCARES.html">GO TO WEBSITE</a>
+    <a href="https://sweetmanhircus.github.io/Super-Hircus/NOBODYCARES.html">GO TO WEBSITE</a>
 </div>
 <br><br><br><br>
 <div class="box" style="background:linear-gradient(rgb(255, 200, 0),rgb(255, 149, 0)); width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; margin: auto;">
-    <a href="https://sweetmanhircus.github.io/Hircus//NOBODYCARES.html">GO TO WEBSITE</a>
+    <a href="https://sweetmanhircus.github.io/Super-Hircus/NOBODYCARES.html">GO TO WEBSITE</a>
 </div>
 <br><br><br><br>
 <div class="box" style="background:linear-gradient(rgb(255, 200, 0),rgb(255, 149, 0)); width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; margin: auto;">
-    <a href="https://sweetmanhircus.github.io/Hircus//NOBODYCARES.html">GO TO WEBSITE</a>
+    <a href="https://sweetmanhircus.github.io/Super-Hircus/NOBODYCARES.html">GO TO WEBSITE</a>
 </div>
 </body>
 </html>
