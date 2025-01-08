@@ -805,3 +805,106 @@ body.dark-theme {
     opacity: 1;
     transform: none;
   }
+
+/* newwwwwwwwwww */
+
+ /* Define CSS variables for light and dark themes */
+
+
+  .pop-overlay {
+    display: flex;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   font-family: 'Courier prime', Courier, monospace;
+   
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+   
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .pop-box {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    animation: slideDown 0.5s ease-in-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .pop-box h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+  }
+
+  .pop-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .pop-box input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .pop-box input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .pop-box input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .pop-box button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+
+  .pop-box button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+
+
+
+
+
+
