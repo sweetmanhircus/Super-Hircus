@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="hTt6aOg8NIUJiccAZ_sviQxvK4xsqXOYGgwvlFWQXhg" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="Super-Hircus | Neuroscience for a Healthy Life">
-  <meta name="description" content="Discover neuroscience insights with Super-Hircus to boost brain health, build a healthy lifestyle, and unlock your potential. Explore expert tips and strategies for personal growth.">
-  <meta name="keywords" content="Super-Hircus, neuroscience, healthy life, brain health, personal growth, mental health, neuroscience tips, productivity, healthy lifestyle">
-  <meta name="author" content="Hircus">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  <meta name="language" content="malayalam">
-  
   
   <link rel="icon" href="Noboby_Cares_v-removebg-preview.png">
 
@@ -35,8 +22,12 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <style>
+ 
+  
+  </style>
 
-  <title>SUPER-HIRCUS</title>
+  <title>HIRCUS</title>
 </head>
 <body>
   
@@ -64,7 +55,7 @@
         </details>
         </div>
 
-    <h1 class="logo"><a href="NOBODYCARES.html">Nobody Cares</a></h1>
+    <h1 class="logo"><a href="NOBODYCARES.html">Super Hircus</a></h1>
     <nav>
         <ul>
           <li style="background-color: rgb(0, 255, 0); border-radius: 20px;"><a href="sphere.html">NEW</a></li>
@@ -87,7 +78,7 @@
 </header>
 <br><br><br><br><br>
 
-<div class="bar2"><h2>The original Hircus NC store</h2></div>
+<div class="bar2 fade-in"><h2>The original Hircus NC store</h2></div>
 </div>
 
 
@@ -132,7 +123,7 @@
 <br><br><br>
 <h1 class="social">YOUTUBE</h1>
 <br><br>
-<div class="youtube">
+<div class="youtube zoom-in">
   <img src="hircus.jpg" alt="" width="200px" style="border-radius: 250px;">
   <h1 style="color: #f4f4f4; font-family: 'Courier prime', Courier, monospace;">Super Hircus</h1>
   <h4 style="color: #F4F4F4; font-family: 'Courier prime', Courier, monospace;">@Hircus.</h4>
@@ -160,6 +151,7 @@
 <details>
   <summary style="text-align: center; list-style-type: none; user-select: none;" >
     <img src="show-more.png" alt="" width="40px">
+    <h2 style="font-family: 'Courier prime', Courier, monospace;">SHOW MORE</h1>
   </summary>
   <nav>
     <div class="insta">
@@ -178,6 +170,34 @@
 
 <h1 class="social">STAY CONNECTED</h1>
 <br><br><br>
+
+
+
+
+
+<!--FORM-->
+
+
+<div class="custom-form-container">
+  <div class="popup-overlay" id="popup-overlay">
+    <div class="popup-box">
+      <button class="close-btn" id="close-btn">&times;</button>
+      <h2>Subscribe to HIRCUS</h2>
+     
+      <form action="https://formsubmit.co/hircusmtf@gmail.com" method="POST">
+        <input type="text"  placeholder="Enter your name" name="name" required>
+        <input type="email"  placeholder="Enter your email" name="email" required>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://sweetmanhircus.github.io/Super-Hircus/">
+        <button type="submit">Send</button>
+   </form>
+    </div>
+  </div>
+</div>
+
+
+<!--form-->
 
 
 
@@ -209,6 +229,51 @@
 
 </div>
 
+
+
+
   <script src="NOBODYCARES.js"></script>
+  <script>
+    function handleScroll() {
+      const fadeInElements = document.querySelectorAll('.fade-in');
+      const zoomInElements = document.querySelectorAll('.zoom-in');
+
+      fadeInElements.forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+          el.classList.add('visible');
+        }
+      });
+
+      zoomInElements.forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+          el.classList.add('visible');
+        }
+      });
+    }
+
+    document.addEventListener('scroll', handleScroll);
+    document.addEventListener('DOMContentLoaded', handleScroll);
+  </script>
+
+
+
+<!--script-->
+
+<script>
+  // Get the popup elements
+  const popupOverlay = document.getElementById('popup-overlay');
+  const closeBtn = document.getElementById('close-btn');
+
+  // Show the popup after 10 seconds
+  setTimeout(() => {
+    popupOverlay.style.display = 'flex';
+  }, 10000);
+
+  // Close the popup when the close button is clicked
+  closeBtn.addEventListener('click', () => {
+    popupOverlay.style.display = 'none';
+  });
+</script>
+
 </body>
 </html>
