@@ -2,14 +2,17 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0;
+
+
 }
 body{
-    background-color: #fafafa;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 .bar2{
-    background-color:#fafafa;
+    background-color: var(--background-color);
     text-align: center;
-    color: #5d5df7;
+    color: var(--primary-color);
     font-family: "Lexend Tera";
     padding: 10px;
     font-size: xx-small;
@@ -18,14 +21,14 @@ body{
 
 
 .mytab {
-    background-color: #fafafa;
+    background-color: var(--background-color);
     height: 90px;
     gap: 30px;
     align-items: center;
     display: flex;
     padding: 15px;
     width: 100%;
-    border: solid black 1px;
+    border: solid var(--border-color) 1px;
     position: absolute;
     
 
@@ -50,7 +53,7 @@ body{
 
 .logo a{
     text-decoration: none;
-    color: #000000;
+    color: var(--text-color);
     font-family: "jersey 10";
 }
 
@@ -76,7 +79,7 @@ nav ul li a {
     padding: 10px 20px;
     border-radius: 10px;
     display: block;
-   color: black;
+   color: var(--text-color);
     font-family: "courier prime";
 }
 nav ul li a:hover{
@@ -108,30 +111,24 @@ nav ul li a:hover {
     transition: 1s;
 }
 
-
-
-
 details ul{
     position: absolute;
     margin-top:27px;
     padding: 40px;
-  background-color: #fafafa;
+    background-color: var(--background-color);
     border-radius: 20px;
-    border: solid black;
+    border: solid var(--border-color);
     height:590px;
     
 
 }
-
-
-
 
 details ul li{
     list-style-type: none;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
-    border:1px solid black;
+    border:1px solid var(--border-color);
     
 }
 details ul li:hover{
@@ -142,14 +139,14 @@ transition: background-color 0.2s ease;
 }
 
 details ul li a{
-    color: rgb(0, 0, 0);
+    color: var(--text-color);
     text-decoration: none;
     font-family: "courier prime";
     
 }
 
 .box3{
-    background-color: #fafafa;
+    background-color: var(--background-color);
     width: 100%;
     height: 1550px;
 }
@@ -166,7 +163,7 @@ details ul li a{
   align-items: center;
   height: 87vh;
  
-  background-color: #ffffff;
+  background-color: var(--background-color);
 }
 
 @media(max-width:720px){
@@ -342,8 +339,8 @@ details ul li a{
 }
 
 footer {
-  background: linear-gradient(135deg, #1d1d1d, #333);
-  color: #fff;
+  background: var(--footer-background);
+  color: var(--footer-text-color);
   padding: 40px 0;
   text-align: center;
   height: 600px;
@@ -377,7 +374,7 @@ footer {
 
 .contact-info p {
   margin: 5px 0;
-  color: #ccc;
+  color: var(--footer-text-color);
 }
 
 .social-icons {
@@ -387,13 +384,13 @@ footer {
 }
 
 .social-icons a {
-  color: #fff;
+  color: var(--social-icon-color);
   font-size: 24px;
   width: 50px;
   height: 50px;
   line-height: 50px;
   border-radius: 50%;
-  background: #444;
+  background: var(--social-icon-background);
   display: inline-block;
   text-align: center;
   transition: all 0.4s ease;
@@ -441,7 +438,7 @@ footer {
 }
 
 .footer-bottom a {
-  color: #fff;
+  color: var(--footer-text-color);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -466,8 +463,8 @@ footer {
 }
 
 .back{
-  background-color: #fafafa;
-  border:20px solid #a6d5ff;
+  background-color: var(--background-color);
+  border:20px solid var(--border-color);
 }
 
 @media(max-width:720px){
@@ -490,13 +487,13 @@ footer {
 }
 
 .social-cons a {
-  color: #000000;
+  color: var(--text-color);
   font-size: 24px;
   width: 50px;
   height: 50px;
   line-height: 50px;
   border-radius: 50%;
-  background: #fafafa;
+  background: var(--background-color);
   display: inline-block;
   text-align: center;
   transition: all 0.4s ease;
@@ -574,9 +571,10 @@ footer {
   user-select: none;
 
 }
+
 @media(max-width:720px){
   .subscribe{
-    margin-left:230px ;
+    margin-left:210px ;
   }
 }
 
@@ -597,3 +595,213 @@ footer {
   border-radius: 20px;
   
 }
+
+/* Define CSS variables for light and dark themes */
+:root {
+  --background-color: #fafafa;
+  --text-color: #000;
+  --primary-color: #5d5df7;
+  --border-color: #000;
+  --footer-background: linear-gradient(135deg, #1d1d1d, #333);
+  --footer-text-color: #fff;
+  --social-icon-background: #444;
+  --social-icon-color: #fff;
+}
+
+body.dark-theme {
+  --background-color: #1d1d1d;
+  --text-color: #fff;
+  --primary-color: #5d5df7;
+  --border-color: #fff;
+  --footer-background: linear-gradient(135deg, #333, #1d1d1d);
+  --footer-text-color: #ccc;
+  --social-icon-background: #333;
+  --social-icon-color: #fff;
+}
+
+/* hhshsss*/
+
+.custom-form-container h2 {
+  text-align: center;
+  font-family: 'Courier Prime', Courier, monospace;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.custom-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.custom-form-container label {
+  font-weight: bold;
+  font-family: 'Courier Prime', Courier, monospace;
+  color: #333;
+}
+
+.custom-form-container input,
+.custom-form-container textarea {
+  padding: 10px;
+  font-family: 'Courier Prime', Courier, monospace;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.custom-form-container button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-form-container button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+    z-index: 1000;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .popup-box {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    animation: slideDown 0.5s ease-in-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .popup-box h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+  }
+
+  .popup-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .popup-box input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .popup-box input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .popup-box input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .popup-box button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+
+  .popup-box button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #888;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .close-btn:hover {
+    color: #333;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* Fade-in and zoom-in animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .zoom-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .fade-in.visible, .zoom-in.visible {
+    opacity: 1;
+    transform: none;
+  }
